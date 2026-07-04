@@ -53,7 +53,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\textbullet]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -69,17 +69,17 @@
 \end{center}
 
 %-----------EDUCATION-----------
-\section{Education and Coursework}
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {UC Berkeley}{Until 2026}
-      {Computer Science, Cognitive Science; Linguistics Minor}{3.72 GPA}
+      {UC Berkeley}{Expected August 2026}
+      {B.A. Computer Science and Cognitive Science; Linguistics Minor}{GPA: 3.72}
   \resumeSubHeadingListEnd
 
-  \vspace{-12pt}
+  \vspace{-8pt}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{CS:} Probability and Random Processes (EECS 126), Artificial Intelligence (CS 188), Algorithms (CS 170), Computer Security (CS 161), Software Engineering (CS 169), Algorithmic Economics (CS 177), Computability and Complexity (CS 172), Econometrics (Econ 141), Computer Architecture (CS 61C), Data Structures (CS 61B), Discrete Math and Probability (CS 70), Linear Algebra (CS 56), Calculus (51/52), Statistics (2)
+      \textbf{Relevant Coursework:} Probability \& Random Processes, Artificial Intelligence, Algorithms, Computer Security, Software Engineering, Algorithmic Economics, Computability \& Complexity, Econometrics, Computer Architecture, Data Structures, Discrete Math \& Probability, Linear Algebra, Statistics
     }}
   \end{itemize}
 
@@ -89,13 +89,13 @@
      \resumeProjectHeading
       {\textbf{Secure File Sharing System}}{}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a cryptographically secure file sharing system in Go. Built from scratch; no vibe coding. }
-        \resumeItem{Tested in a fully adversarial server enviornment where adversaries have full write access to datastore and read access to keystore.}
+        \resumeItem{Designed and implemented a cryptographically secure file sharing system in Go using public-key encryption, digital signatures, and HMACs.}
+        \resumeItem{Validated correctness under a fully adversarial server environment where attackers hold full write access to the datastore and read access to the keystore.}
       \resumeItemListEnd
     \resumeProjectHeading
       {\textbf{Regression and Gradient Descent From Scratch}}{}
       \resumeItemListStart
-        \resumeItem{Linear and logistic regression from first principles. Gradient descent and closed form solvers.}
+        \resumeItem{Implemented linear and logistic regression from first principles with gradient descent and closed-form solvers in Python/NumPy.}
         \resumeItem{Added ridge (L2) and lasso (L1) regularization and tuned penalty strength via k-fold cross-validation, using bias-variance analysis to diagnose over- and underfitting.}
       \resumeItemListEnd  
     \resumeProjectHeading
@@ -106,13 +106,13 @@
      \resumeProjectHeading
       {\textbf{MCMC Cipher Decoder}}{}
       \resumeItemListStart
-        \resumeItem{Implemented the Metropolis-Hastings from scratch in Python/NumPy.} 
-        \resumeItem{Sample from arbitrary target distributions, then applied it to decrypt substitution ciphers by treating the space of key permutations as a Markov chain and scoring candidate keys against an English-language bigram frequency matrix built from War and Peace.}
+        \resumeItem{Implemented the Metropolis-Hastings algorithm from scratch in Python/NumPy to sample from arbitrary target distributions.}
+        \resumeItem{Applied MCMC to decrypt substitution ciphers by modeling key permutations as a Markov chain.}
       \resumeItemListEnd
     \resumeProjectHeading
       {\textbf{Prediction Market Simulator}}{}
       \resumeItemListStart
-        \resumeItem{Simulating and visualizing prediction markets with LMSR online learning algorithm in C++.}
+        \resumeItem{Simulated and visualized prediction market dynamics using the LMSR online learning algorithm in C++.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -122,28 +122,26 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Software Engineering Intern}{2024}
+      {Software Engineering Intern}{May 2024 -- Aug. 2024}
       {Tools for Humanity}{San Francisco, CA}
       \resumeItemListStart
-        \resumeItem{Wrote Rust, Python, and Bash for an iris scanning device called the Orb.}
-        \resumeItem{Built Rust CLI tools for accessing Orb metrics.}
+        \resumeItem{Developed production Rust, Python, and Bash code for an iris-scanning biometric device (the Orb).}
+        \resumeItem{Engineered Rust CLI tooling to surface and query real-time Orb device metrics.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Research Assistant}{2025--}
+      {Research Assistant}{Jan. 2025 -- Present}
       {Language and Cognitive Development Lab}{UC Berkeley}
       \resumeItemListStart
-        \resumeItem{Built experiment for word-object learning models using dynamic field theory in MATLAB.}
-        \resumeItem{Wrote data processing scripts in Python.}
+        \resumeItem{Designed and implemented computational experiment for word-object learning models using dynamic field theory in MATLAB.}
+        \resumeItem{Developed automated data processing and analysis pipelines in Python.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Research Assistant}{2021--2023}
+      {Research Assistant}{2021 -- 2023}
       {UCSC Linguistics Department}{Santa Cruz, CA}
       \resumeItemListStart
-        \resumeItem{Eyetracking research on underspecification, parsing of syntactic ambiguities.}
-        \resumeItem{Operated eye-tracker, worked with participants, collected data.}
-        \resumeItem{Worked with Amanda Rysling (UCSC), Jack Duff (UCLA).}
+        \resumeItem{Conducted eye-tracking research on syntactic ambiguity resolution and lexical underspecification.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -153,10 +151,10 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages:} Python, Go, C++, C, Java, R, RISC-V Assembly, SQL, Bash \\
-     \textbf{Libraries \& Frameworks:} PyTorch, NumPy, SciPy, pandas, Matplotlib \\
-     \textbf{Tools \& Platforms:} Git, Jupyter, Linux, Model Context Protocol (MCP) \\
-     \textbf{Domains:} Machine learning, applied cryptography, information theory, probabilistic modeling, computer architecture
+     \textbf{Languages:} Python, Rust, Go, C++, C, Java, R, RISC-V Assembly, SQL, Bash \\
+     \textbf{Libraries \& Frameworks:} PyTorch, TensorFlow, NumPy, SciPy, pandas, Matplotlib \\
+     \textbf{Tools \& Platforms:} Git, Jupyter, Linux, MATLAB, Model Context Protocol (MCP) \\
+     \textbf{Domains:} Machine learning, deep learning, applied cryptography, information theory, probabilistic modeling, computer architecture
     }}
  \end{itemize}
 
