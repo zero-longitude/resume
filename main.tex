@@ -79,12 +79,43 @@
   \vspace{-12pt}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-      \textbf{CS:} Probability and Random Processes (EECS 126), Artificial Intelligence (CS 188), Algorithms (CS 170), Computer Security (CS 161), Internet Architectures and Protocols (CS 168), Algorithmic Economics (CS 177), Computability and Complexity (CS 172), Econometrics (Econ 141), Computer Architecture (CS 61C), Data Structures (CS 61B), Discrete Math and Probability (CS 70), Linear Algebra (CS 56), Calculus (51/52), Statistics (2)
-    }}
-    \small{\item{
-      \textbf{Cognitive Science and Linguistics:} Courses in psychology, neuroscience, data science, and linguistics.
+      \textbf{CS:} Probability and Random Processes (EECS 126), Artificial Intelligence (CS 188), Algorithms (CS 170), Computer Security (CS 161), Software Engineering (CS 169), Algorithmic Economics (CS 177), Computability and Complexity (CS 172), Econometrics (Econ 141), Computer Architecture (CS 61C), Data Structures (CS 61B), Discrete Math and Probability (CS 70), Linear Algebra (CS 56), Calculus (51/52), Statistics (2)
     }}
   \end{itemize}
+
+  %-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+     \resumeProjectHeading
+      {\textbf{Secure File Sharing System}}{}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a cryptographically secure file sharing system in Go. Built from scratch; no vibe coding. }
+        \resumeItem{Tested in a fully adversarial server enviornment where adversaries have full write access to datastore and read access to keystore.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Regression and Gradient Descent From Scratch}}{}
+      \resumeItemListStart
+        \resumeItem{Linear and logistic regression from first principles. Gradient descent and closed form solvers.}
+        \resumeItem{Added ridge (L2) and lasso (L1) regularization and tuned penalty strength via k-fold cross-validation, using bias-variance analysis to diagnose over- and underfitting.}
+      \resumeItemListEnd  
+    \resumeProjectHeading
+      {\textbf{Assembly Level Digit Classifier}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented a neural network inference engine in RISC-V assembly, capable of classifying handwritten digits through matrix operations and ReLU activation.}
+      \resumeItemListEnd
+     \resumeProjectHeading
+      {\textbf{MCMC Cipher Decoder}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented the Metropolis-Hastings from scratch in Python/NumPy.} 
+        \resumeItem{Sample from arbitrary target distributions, then applied it to decrypt substitution ciphers by treating the space of key permutations as a Markov chain and scoring candidate keys against an English-language bigram frequency matrix built from War and Peace.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Prediction Market Simulator}}{}
+      \resumeItemListStart
+        \resumeItem{Simulating and visualizing prediction markets with LMSR online learning algorithm in C++.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -117,40 +148,13 @@
 
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-  \resumeSubHeadingListStart
-     \resumeProjectHeading
-      {\textbf{Secure File Sharing System}}{}
-      \resumeItemListStart
-        \resumeItem{Designed and implemented a cryptographically secure file sharing system in Go.}
-        \resumeItem{Built from scratch with no vibe coding. 2000+ lines.}
-        \resumeItem{Tested in a fully adversarial server enviornment where adversaries have full write access to datastore and read access to keystore.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{Prediction Market Simulator}}{}
-      \resumeItemListStart
-        \resumeItem{Simulating and visualizing prediction markets with LMSR online learning algorithm in C++.}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {\textbf{Digit Classifier}}{}
-      \resumeItemListStart
-        \resumeItem{Implemented a neural network inference engine in RISC-V assembly, capable of classifying handwritten digits through matrix operations and ReLU activation.}
-      \resumeItemListEnd
-     \resumeProjectHeading
-      {\textbf{Wordle Bot}}{}
-      \resumeItemListStart
-        \resumeItem{Built an entropy-maximizing Wordle solver in Python that selects optimal guesses by maximizing Shannon information gain.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages:} Python, Go, C++, C, Java, R, RISC-V Assembly, SQL, Bash \\
-     \textbf{Libraries \& Frameworks:} TensorFlow, PyTorch, NumPy, SciPy, pandas, Matplotlib \\
+     \textbf{Libraries \& Frameworks:} PyTorch, NumPy, SciPy, pandas, Matplotlib \\
      \textbf{Tools \& Platforms:} Git, Jupyter, Linux, Model Context Protocol (MCP) \\
      \textbf{Domains:} Machine learning, applied cryptography, information theory, probabilistic modeling, computer architecture
     }}
